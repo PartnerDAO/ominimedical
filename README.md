@@ -232,17 +232,17 @@ We're building global healthcare infrastructure together. **Your contribution ma
 3. Join our [Discord community](https://discord.gg/omni-medical)
 
 4. Submit your first PR!
-   
+
+   ```bash
    # Fork the repo, then:
-   
-    git checkout -b feature/my-contribution
+   git checkout -b feature/my-contribution
    
    # Make your changes
-   
-    pytest tests/
-    git push origin feature/my-contribution
+   pytest tests/
+   git push origin feature/my-contribution
    
    # Open a PR on GitHub
+   ```
 
 * * *
 
