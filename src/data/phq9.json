@@ -1,0 +1,541 @@
+{
+  "phq9_cdc_rule_base": {
+    "metadata": {
+      "standard": "PHQ-9 (Kroenke et al., 2001)",
+      "mapping": "DSM-IV MDD Criterion A",
+      "timeframe": "During the past two weeks",
+      "degree_scale": {
+        "0": "Not at all",
+        "1": "Several days",
+        "2": "More than half the days",
+        "3": "Nearly every day"
+      }
+    },
+    "items": [
+      {
+        "item_id": "PHQ9_Item1",
+        "dsm_criterion": "A1_Anhedonia",
+        "standard_question": "Feeling unmotivated or no pleasure in activities",
+        "cdc_edges": [
+          {
+            "edge_id": "Item1_E1",
+            "concept_source": "Loss of interest in hobby activities",
+            "relation": "manifests_as",
+            "domain": "PHQ9@Item1@Anhedonia",
+            "concept_target": "No longer wanting to do previously enjoyed activities",
+            "degree_slot": "frequency",
+            "weight": 1.0
+          },
+          {
+            "edge_id": "Item1_E2",
+            "concept_source": "Loss of interest in social activities",
+            "relation": "manifests_as",
+            "domain": "PHQ9@Item1@Anhedonia",
+            "concept_target": "Not wanting to see friends, not wanting to attend gatherings, feeling exhausted in social situations",
+            "degree_slot": "frequency",
+            "weight": 1.0
+          },
+          {
+            "edge_id": "Item1_E3",
+            "concept_source": "Loss of interest in work",
+            "relation": "manifests_as",
+            "domain": "PHQ9@Item1@Anhedonia",
+            "concept_target": "Lack of motivation for work, feeling work is meaningless, difficulty concentrating on tasks",
+            "degree_slot": "frequency",
+            "weight": 1.0
+          },
+          {
+            "edge_id": "Item1_E4",
+            "concept_source": "Unable to feel pleasure from activities",
+            "relation": "manifests_as",
+            "domain": "PHQ9@Item1@Anhedonia",
+            "concept_target": "Everything feels meaningless, not experiencing pleasure, emotional numbness",
+            "degree_slot": "frequency",
+            "weight": 1.0
+          },
+          {
+            "edge_id": "Item1_E5",
+            "concept_source": "Decreased libido",
+            "relation": "manifests_as",
+            "domain": "PHQ9@Item1@Anhedonia",
+            "concept_target": "Loss of interest in sexual activity, significant decrease in sexual desire",
+            "degree_slot": "frequency",
+            "weight": 0.8
+          }
+        ],
+        "symptom_list": [
+          "No longer wanting to do previously enjoyed activities",
+          "Not wanting to see friends",
+          "Not wanting to attend gatherings",
+          "Feeling exhausted in social situations",
+          "Lack of motivation for work",
+          "Feeling work is meaningless",
+          "Difficulty concentrating on tasks",
+          "Everything feels meaningless",
+          "Not experiencing pleasure",
+          "Emotional numbness",
+          "Loss of interest in sexual activity",
+          "Significant decrease in sexual desire"
+        ]
+      },
+      {
+        "item_id": "PHQ9_Item2",
+        "dsm_criterion": "A2_Depressed_Mood",
+        "standard_question": "Feeling down, depressed, or hopeless",
+        "cdc_edges": [
+          {
+            "edge_id": "Item2_E1",
+            "concept_source": "Low mood",
+            "relation": "manifests_as",
+            "domain": "PHQ9@Item2@Depressed_Mood",
+            "concept_target": "Persistent low spirits, unable to feel happy, feeling empty",
+            "degree_slot": "frequency",
+            "weight": 1.0
+          },
+          {
+            "edge_id": "Item2_E2",
+            "concept_source": "Feeling frustrated",
+            "relation": "manifests_as",
+            "domain": "PHQ9@Item2@Depressed_Mood",
+            "concept_target": "Feeling life is difficult, feeling defeated, depressed mood",
+            "degree_slot": "frequency",
+            "weight": 1.0
+          },
+          {
+            "edge_id": "Item2_E3",
+            "concept_source": "Feeling hopeless",
+            "relation": "manifests_as",
+            "domain": "PHQ9@Item2@Depressed_Mood",
+            "concept_target": "Not seeing hope, feeling the future is dark, feeling there's no way out",
+            "degree_slot": "frequency",
+            "weight": 1.0
+          },
+          {
+            "edge_id": "Item2_E4",
+            "concept_source": "Easy crying",
+            "relation": "manifests_as",
+            "domain": "PHQ9@Item2@Depressed_Mood",
+            "concept_target": "Often wanting to cry, unable to control tears, emotional breakdowns",
+            "degree_slot": "frequency",
+            "weight": 0.8
+          },
+          {
+            "edge_id": "Item2_E5",
+            "concept_source": "Diminished emotional response",
+            "relation": "manifests_as",
+            "domain": "PHQ9@Item2@Depressed_Mood",
+            "concept_target": "No feeling for good or bad things, flat emotions, feeling numb",
+            "degree_slot": "frequency",
+            "weight": 0.9
+          }
+        ],
+        "symptom_list": [
+          "Persistent low spirits",
+          "Unable to feel happy",
+          "Feeling empty",
+          "Feeling life is difficult",
+          "Feeling defeated",
+          "Depressed mood",
+          "Not seeing hope",
+          "Feeling the future is dark",
+          "Feeling there's no way out",
+          "Often wanting to cry",
+          "Unable to control tears",
+          "Emotional breakdowns",
+          "No feeling for good or bad things",
+          "Flat emotions",
+          "Feeling numb"
+        ]
+      },
+      {
+        "item_id": "PHQ9_Item3",
+        "dsm_criterion": "A4_Sleep_Disturbance",
+        "standard_question": "Trouble falling or staying asleep, or sleeping too much",
+        "cdc_edges": [
+          {
+            "edge_id": "Item3_E1",
+            "concept_source": "Difficulty falling asleep",
+            "relation": "manifests_as",
+            "domain": "PHQ9@Item3@Sleep_Disturbance@Insomnia",
+            "concept_target": "Can't fall asleep for a long time in bed, mind won't stop, tossing and turning for over 30 minutes",
+            "degree_slot": "frequency",
+            "weight": 1.0
+          },
+          {
+            "edge_id": "Item3_E2",
+            "concept_source": "Unstable sleep",
+            "relation": "manifests_as",
+            "domain": "PHQ9@Item3@Sleep_Disturbance@Insomnia",
+            "concept_target": "Frequent awakenings, light sleep, easily startled, difficulty falling back asleep after waking",
+            "degree_slot": "frequency",
+            "weight": 1.0
+          },
+          {
+            "edge_id": "Item3_E3",
+            "concept_source": "Early awakening",
+            "relation": "manifests_as",
+            "domain": "PHQ9@Item3@Sleep_Disturbance@Insomnia",
+            "concept_target": "Waking up 2+ hours earlier than usual, unable to continue sleeping after waking, feeling anxious when waking up in the morning",
+            "degree_slot": "frequency",
+            "weight": 1.0
+          },
+          {
+            "edge_id": "Item3_E4",
+            "concept_source": "Excessive sleep",
+            "relation": "manifests_as",
+            "domain": "PHQ9@Item3@Sleep_Disturbance@Hypersomnia",
+            "concept_target": "Sleeping over 10 hours daily, daytime sleepiness, never feeling like enough sleep, difficulty getting out of bed",
+            "degree_slot": "frequency",
+            "weight": 1.0
+          }
+        ],
+        "symptom_list": [
+          "Can't fall asleep for a long time in bed",
+          "Mind won't stop",
+          "Tossing and turning for over 30 minutes",
+          "Frequent awakenings",
+          "Light sleep",
+          "Easily startled",
+          "Difficulty falling back asleep after waking",
+          "Waking up 2+ hours earlier than usual",
+          "Unable to continue sleeping after waking",
+          "Feeling anxious when waking up in the morning",
+          "Sleeping over 10 hours daily",
+          "Daytime sleepiness",
+          "Never feeling like enough sleep",
+          "Difficulty getting out of bed"
+        ]
+      },
+      {
+        "item_id": "PHQ9_Item4",
+        "dsm_criterion": "A5_Fatigue",
+        "standard_question": "Feeling tired or having little energy",
+        "cdc_edges": [
+          {
+            "edge_id": "Item4_E1",
+            "concept_source": "Feeling tired",
+            "relation": "manifests_as",
+            "domain": "PHQ9@Item4@Fatigue",
+            "concept_target": "Heavy body, overall weakness, always feeling tired, rest doesn't provide relief",
+            "degree_slot": "frequency",
+            "weight": 1.0
+          },
+          {
+            "edge_id": "Item4_E2",
+            "concept_source": "Lack of energy",
+            "relation": "manifests_as",
+            "domain": "PHQ9@Item4@Fatigue",
+            "concept_target": "Activities feel strenuous, simple tasks are very difficult, lack of motivation",
+            "degree_slot": "frequency",
+            "weight": 1.0
+          },
+          {
+            "edge_id": "Item4_E3",
+            "concept_source": "Decreased physical strength",
+            "relation": "manifests_as",
+            "domain": "PHQ9@Item4@Fatigue",
+            "concept_target": "Climbing stairs feels strenuous, easily tired when walking, physical strength clearly not what it used to be",
+            "degree_slot": "frequency",
+            "weight": 0.9
+          }
+        ],
+        "symptom_list": [
+          "Heavy body",
+          "Overall weakness",
+          "Always feeling tired",
+          "Rest doesn't provide relief",
+          "Activities feel strenuous",
+          "Simple tasks are very difficult",
+          "Lack of motivation",
+          "Climbing stairs feels strenuous",
+          "Easily tired when walking",
+          "Physical strength clearly not what it used to be"
+        ]
+      },
+      {
+        "item_id": "PHQ9_Item5",
+        "dsm_criterion": "A3_Appetite_Change",
+        "standard_question": "Poor appetite or overeating",
+        "cdc_edges": [
+          {
+            "edge_id": "Item5_E1",
+            "concept_source": "Decreased appetite",
+            "relation": "manifests_as",
+            "domain": "PHQ9@Item5@Appetite_Change@Decrease",
+            "concept_target": "Don't want to eat, no appetite for food, need to force yourself to eat, weight loss",
+            "degree_slot": "frequency",
+            "weight": 1.0
+          },
+          {
+            "edge_id": "Item5_E2",
+            "concept_source": "Increased appetite",
+            "relation": "manifests_as",
+            "domain": "PHQ9@Item5@Appetite_Change@Increase",
+            "concept_target": "Always want to eat, emotional eating, binge eating, weight gain",
+            "degree_slot": "frequency",
+            "weight": 1.0
+          },
+          {
+            "edge_id": "Item5_E3",
+            "concept_source": "Changed eating habits",
+            "relation": "manifests_as",
+            "domain": "PHQ9@Item5@Appetite_Change",
+            "concept_target": "Irregular diet, forgetting to eat, eating feels like a chore",
+            "degree_slot": "frequency",
+            "weight": 0.8
+          }
+        ],
+        "symptom_list": [
+          "Don't want to eat",
+          "No appetite for food",
+          "Need to force yourself to eat",
+          "Weight loss",
+          "Always want to eat",
+          "Emotional eating",
+          "Binge eating",
+          "Weight gain",
+          "Irregular diet",
+          "Forgetting to eat",
+          "Eating feels like a chore"
+        ]
+      },
+      {
+        "item_id": "PHQ9_Item6",
+        "dsm_criterion": "A7_Worthlessness_Guilt",
+        "standard_question": "Feeling bad about yourself or that you are a failure or have let your family down",
+        "cdc_edges": [
+          {
+            "edge_id": "Item6_E1",
+            "concept_source": "Low self-evaluation",
+            "relation": "manifests_as",
+            "domain": "PHQ9@Item6@Worthlessness",
+            "concept_target": "Feeling useless, believing you're good for nothing, feeling terrible about yourself",
+            "degree_slot": "frequency",
+            "weight": 1.0
+          },
+          {
+            "edge_id": "Item6_E2",
+            "concept_source": "Failure feeling",
+            "relation": "manifests_as",
+            "domain": "PHQ9@Item6@Worthlessness",
+            "concept_target": "Feeling like a failure, believing you can't do anything right, always messing things up",
+            "degree_slot": "frequency",
+            "weight": 1.0
+          },
+          {
+            "edge_id": "Item6_E3",
+            "concept_source": "Guilt feeling",
+            "relation": "manifests_as",
+            "domain": "PHQ9@Item6@Guilt",
+            "concept_target": "Feeling like you let your family down, feeling sorry for others, excessive self-blame",
+            "degree_slot": "frequency",
+            "weight": 1.0
+          },
+          {
+            "edge_id": "Item6_E4",
+            "concept_source": "Self-negation",
+            "relation": "manifests_as",
+            "domain": "PHQ9@Item6@Worthlessness",
+            "concept_target": "Believing you don't deserve to be loved, feeling others will嫌弃 you, always belittling yourself",
+            "degree_slot": "frequency",
+            "weight": 0.9
+          }
+        ],
+        "symptom_list": [
+          "Feeling useless",
+          "Believing you're good for nothing",
+          "Feeling terrible about yourself",
+          "Feeling like a failure",
+          "Believing you can't do anything right",
+          "Always messing things up",
+          "Feeling like you let your family down",
+          "Feeling sorry for others",
+          "Excessive self-blame",
+          "Believing you don't deserve to be loved",
+          "Feeling others will嫌弃 you",
+          "Always belittling yourself"
+        ]
+      },
+      {
+        "item_id": "PHQ9_Item7",
+        "dsm_criterion": "A8_Concentration_Difficulty",
+        "standard_question": "Trouble concentrating on things",
+        "cdc_edges": [
+          {
+            "edge_id": "Item7_E1",
+            "concept_source": "Difficulty concentrating",
+            "relation": "manifests_as",
+            "domain": "PHQ9@Item7@Concentration",
+            "concept_target": "Can't focus when reading, chaotic thoughts, slow thinking, slow reactions",
+            "degree_slot": "frequency",
+            "weight": 1.0
+          },
+          {
+            "edge_id": "Item7_E2",
+            "concept_source": "Difficulty making decisions",
+            "relation": "manifests_as",
+            "domain": "PHQ9@Item7@Concentration",
+            "concept_target": "Very difficult to make decisions, indecisiveness, simple choices are very difficult",
+            "degree_slot": "frequency",
+            "weight": 0.9
+          },
+          {
+            "edge_id": "Item7_E3",
+            "concept_source": "Memory decline",
+            "relation": "manifests_as",
+            "domain": "PHQ9@Item7@Concentration",
+            "concept_target": "Easily forget things, can't remember information, need repeated confirmation",
+            "degree_slot": "frequency",
+            "weight": 0.8
+          },
+          {
+            "edge_id": "Item7_E4",
+            "concept_source": "Low work efficiency",
+            "relation": "manifests_as",
+            "domain": "PHQ9@Item7@Concentration",
+            "concept_target": "Taking longer to complete tasks, easily distracted, declining work quality",
+            "degree_slot": "frequency",
+            "weight": 0.9
+          }
+        ],
+        "symptom_list": [
+          "Can't focus when reading",
+          "Chaotic thoughts",
+          "Slow thinking",
+          "Slow reactions",
+          "Very difficult to make decisions",
+          "Indecisiveness",
+          "Simple choices are very difficult",
+          "Easily forget things",
+          "Can't remember information",
+          "Need repeated confirmation",
+          "Taking longer to complete tasks",
+          "Easily distracted",
+          "Declining work quality"
+        ]
+      },
+      {
+        "item_id": "PHQ9_Item8",
+        "dsm_criterion": "A6_Psychomotor_Change",
+        "standard_question": "Moving or speaking so slowly that other people could have noticed, or being so fidgety or restless that you have been moving around a lot more than usual",
+        "cdc_edges": [
+          {
+            "edge_id": "Item8_E1",
+            "concept_source": "Slow movements",
+            "relation": "manifests_as",
+            "domain": "PHQ9@Item8@Psychomotor@Retardation",
+            "concept_target": "Slow movements, walking slowly, feeling body heavy like filled with lead",
+            "degree_slot": "frequency",
+            "weight": 1.0
+          },
+          {
+            "edge_id": "Item8_E2",
+            "concept_source": "Slow speech",
+            "relation": "manifests_as",
+            "domain": "PHQ9@Item8@Psychomotor@Retardation",
+            "concept_target": "Slow speech, quiet voice, slow reactions, needing long time to think before speaking",
+            "degree_slot": "frequency",
+            "weight": 1.0
+          },
+          {
+            "edge_id": "Item8_E3",
+            "concept_source": "Restlessness",
+            "relation": "manifests_as",
+            "domain": "PHQ9@Item8@Psychomotor@Agitation",
+            "concept_target": "Unable to sit still, pacing back and forth, constant movement of hands and feet, unable to sit quietly",
+            "degree_slot": "frequency",
+            "weight": 1.0
+          },
+          {
+            "edge_id": "Item8_E4",
+            "concept_source": "Irritability",
+            "relation": "manifests_as",
+            "domain": "PHQ9@Item8@Psychomotor@Agitation",
+            "concept_target": "Easily发脾气, restless over small matters, anxious and uneasy inside",
+            "degree_slot": "frequency",
+            "weight": 1.0
+          }
+        ],
+        "symptom_list": [
+          "Slow movements",
+          "Walking slowly",
+          "Feeling body heavy like filled with lead",
+          "Slow speech",
+          "Quiet voice",
+          "Slow reactions",
+          "Needing long time to think before speaking",
+          "Unable to sit still",
+          "Pacing back and forth",
+          "Constant movement of hands and feet",
+          "Unable to sit quietly",
+          "Easily发脾气",
+          "Restless over small matters",
+          "Anxious and uneasy inside"
+        ]
+      },
+      {
+        "item_id": "PHQ9_Item9",
+        "dsm_criterion": "A9_Suicidal_Ideation",
+        "standard_question": "Thoughts that you would be better off dead or of hurting yourself in some way",
+        "critical": true,
+        "cdc_edges": [
+          {
+            "edge_id": "Item9_E1",
+            "concept_source": "Negative thoughts",
+            "relation": "manifests_as",
+            "domain": "PHQ9@Item9@Suicidal_Ideation",
+            "concept_target": "Feeling life is meaningless, thinking death would be easier, feeling it would be better to just die",
+            "degree_slot": "frequency",
+            "weight": 1.0,
+            "alert_level": "high"
+          },
+          {
+            "edge_id": "Item9_E2",
+            "concept_source": "Suicidal thoughts",
+            "relation": "manifests_as",
+            "domain": "PHQ9@Item9@Suicidal_Ideation",
+            "concept_target": "Thought about suicide methods, suicidal imagery appearing in mind, actively searching for suicide information",
+            "degree_slot": "frequency",
+            "weight": 1.0,
+            "alert_level": "critical"
+          },
+          {
+            "edge_id": "Item9_E3",
+            "concept_source": "Self-harm thoughts",
+            "relation": "manifests_as",
+            "domain": "PHQ9@Item9@Self_Harm",
+            "concept_target": "Want to hurt yourself, want to self-harm, want to relieve emotions through pain",
+            "degree_slot": "frequency",
+            "weight": 1.0,
+            "alert_level": "high"
+          },
+          {
+            "edge_id": "Item9_E4",
+            "concept_source": "Suicidal behavior",
+            "relation": "manifests_as",
+            "domain": "PHQ9@Item9@Suicidal_Behavior",
+            "concept_target": "Preparing suicide tools, writing suicide notes, arranging affairs, history of suicide attempts",
+            "degree_slot": "frequency",
+            "weight": 1.0,
+            "alert_level": "emergency"
+          }
+        ],
+        "symptom_list": [
+          "Feeling life is meaningless",
+          "Thinking death would be easier",
+          "Feeling it would be better to just die",
+          "Thought about suicide methods",
+          "Suicidal imagery appearing in mind",
+          "Actively searching for suicide information",
+          "Want to hurt yourself",
+          "Want to self-harm",
+          "Want to relieve emotions through pain",
+          "Preparing suicide tools",
+          "Writing suicide notes",
+          "Arranging affairs",
+          "History of suicide attempts"
+        ]
+      }
+    ]
+  }
+}
