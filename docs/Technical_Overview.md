@@ -500,9 +500,9 @@ This project stands on the shoulders of giants:
 
 ## 📞 Contact
 
-* **Email**: contact@deepleap.ai.ai
+* **Email**: contact@deepleap.ai
 * **GitHub**: [@omni-medical](https://github.com/omni-medical)
-* **Website**: [deepleap.ai.ai](https://deepleap.ai.ai)
+* **Website**: [deepleap.ai](https://deepleap.ai)
 * **Twitter**: [@OmniMedical](https://twitter.com/OmniMedical)
 
 * * *

@@ -332,16 +332,15 @@ We're building global healthcare infrastructure together. **Your contribution ma
 
 ### Stay Connected
 
-* **Website**: [deepleap.ai.ai](https://deepleap.ai.ai)
-* **Email**: contact@deepleap.ai.ai
-* **Twitter**: [@OmniMedical](https://twitter.com/OmniMedical)
-* **Medium**: [@omni-medical](https://medium.com/@omni-medical)
+* **Website**: [deepleap.ai](https://deepleap.ai)
+* **Email**: contact@deepleap.ai
+* **Twitter**: [@OmniMedical](https://x.com/deepleap_ai)
+
 
 ### For Collaboration
 
-* **Partnerships**: partners@deepleap.ai.ai
-* **Research**: research@deepleap.ai.ai
-* **Press**: press@deepleap.ai.ai
+* **Partnerships**: contact@deepleap.ai
+
 
 * * *
 
