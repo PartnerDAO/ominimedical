@@ -163,7 +163,32 @@ Reasoning layer results are fed back to the application layer through explainabl
 
 Note: Application layer is not constructed by this system
 
-┌─────────────────────────────────────────┐ │ Application Layer: User-facing Medical Services │ │ (Natural language consultation, report interpretation, treatment plan discussion) │ └─────────────────────────────────────────┘ ↕ ┌─────────────────────────────────────────┐ │ Hybrid Reasoning Layer: Combines Two Reasoning Paradigms │ │ - Symbolic Reasoning: Executes rule base, provides high-certainty judgments │ │ - Neural Reasoning: LLM performs context understanding and generative prediction │ │ - Decision Fusion: Rules validate LLM results, preventing hallucinations │ └─────────────────────────────────────────┘ ↕ ┌─────────────────────────────────────────┐ │ Knowledge Layer: Structured and Unstructured Knowledge Base │ │ - Fact Base: Structured case data (cdc_fact/5) │ │ - Rule Base: Explicit medical guidelines (diagnosis_rule/N)│ │ - Document Base: Medical literature, textbooks, web pages (unstructured)│ └─────────────────────────────────────────┘┌───────────────────────────────────────────────────────────┐│ LLM Core Engine (The LLM Core): Drives knowledge understanding, reasoning, and discovery ││ - Core Technology: Large Language Models (e.g., Gemini, GPT series) ││ - Key Paradigm: Retrieval-Augmented Generation (RAG) + Fine-tuning ││ - Main Tasks: Understand cases, generate diagnoses, explain reasoning, discover new rules │└───────────────────────────────────────────────────────────┘
+```
+┌─────────────────────────────────────────┐
+│ Application Layer: User-facing Medical Services │
+│ (Natural language consultation, report interpretation, treatment plan discussion) │
+└─────────────────────────────────────────┘
+↕
+┌─────────────────────────────────────────┐
+│ Hybrid Reasoning Layer: Combines Two Reasoning Paradigms │
+│ - Symbolic Reasoning: Executes rule base, provides high-certainty judgments │
+│ - Neural Reasoning: LLM performs context understanding and generative prediction │
+│ - Decision Fusion: Rules validate LLM results, preventing hallucinations │
+└─────────────────────────────────────────┘
+↕
+┌─────────────────────────────────────────┐
+│ Knowledge Layer: Structured and Unstructured Knowledge Base │
+│ - Fact Base: Structured case data (cdc_fact/5) │
+│ - Rule Base: Explicit medical guidelines (diagnosis_rule/N)│
+│ - Document Base: Medical literature, textbooks, web pages (unstructured)│
+└─────────────────────────────────────────┘
+┌───────────────────────────────────────────────────────────┐
+│ LLM Core Engine (The LLM Core): Drives knowledge understanding, reasoning, and discovery │
+│ - Core Technology: Large Language Models (e.g., Gemini, GPT series) │
+│ - Key Paradigm: Retrieval-Augmented Generation (RAG) + Fine-tuning │
+│ - Main Tasks: Understand cases, generate diagnoses, explain reasoning, discover new rules │
+└───────────────────────────────────────────────────────────┘
+```
 
 ### 2.2 Core Components
 
