@@ -755,7 +755,7 @@ Here, we sincerely invite every colleague who shares the same vision—whether c
 
 ## Appendix A -- Case Studies
 
-CBT Case
+[CBT Case](examples/prolog)
 
 PHQ-9 Case
 
